@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'election';
+  title = 'electionfrontend';
+  n:number = 15;
+
+  factoriel(n:number): any{
+    if(n == 0 )
+    return 1;
+    return n * this.factoriel(n-1);
+  }
+
+  reset(){
+    this.n = 5;
+  }
 }
